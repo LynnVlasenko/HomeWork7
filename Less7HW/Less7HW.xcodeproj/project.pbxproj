@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CC3A1642BA08F0B00D56107 /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC3A1632BA08F0B00D56107 /* ProfileData.swift */; };
+		6CF6496F2BA0AFED00734C11 /* UserModel+ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF6496E2BA0AFED00734C11 /* UserModel+ProfileData.swift */; };
+		6CF649712BA0B00000734C11 /* AdminModel+ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF649702BA0B00000734C11 /* AdminModel+ProfileData.swift */; };
 		CEEEFE142BA0673500D443D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEEFE132BA0673500D443D1 /* AppDelegate.swift */; };
 		CEEEFE162BA0673500D443D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEEFE152BA0673500D443D1 /* SceneDelegate.swift */; };
 		CEEEFE1B2BA0673500D443D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEEFE192BA0673500D443D1 /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6CC3A1632BA08F0B00D56107 /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
+		6CF6496E2BA0AFED00734C11 /* UserModel+ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserModel+ProfileData.swift"; sourceTree = "<group>"; };
+		6CF649702BA0B00000734C11 /* AdminModel+ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AdminModel+ProfileData.swift"; sourceTree = "<group>"; };
 		CEEEFE102BA0673500D443D1 /* Less7HW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Less7HW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEEFE132BA0673500D443D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEEEFE152BA0673500D443D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,7 +141,9 @@
 			isa = PBXGroup;
 			children = (
 				CEEEFE312BA077C100D443D1 /* UserModel.swift */,
+				6CF6496E2BA0AFED00734C11 /* UserModel+ProfileData.swift */,
 				CEEEFE332BA077DA00D443D1 /* AdminModel.swift */,
+				6CF649702BA0B00000734C11 /* AdminModel+ProfileData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -144,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				CEEEFE382BA0793500D443D1 /* DataProviderService.swift */,
+				6CC3A1632BA08F0B00D56107 /* ProfileData.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -221,7 +230,10 @@
 			files = (
 				CEEEFE392BA0793500D443D1 /* DataProviderService.swift in Sources */,
 				CEEEFE142BA0673500D443D1 /* AppDelegate.swift in Sources */,
+				6CC3A1642BA08F0B00D56107 /* ProfileData.swift in Sources */,
 				CEEEFE302BA06C4F00D443D1 /* ProfileViewController.swift in Sources */,
+				6CF649712BA0B00000734C11 /* AdminModel+ProfileData.swift in Sources */,
+				6CF6496F2BA0AFED00734C11 /* UserModel+ProfileData.swift in Sources */,
 				CEEEFE322BA077C100D443D1 /* UserModel.swift in Sources */,
 				CEEEFE342BA077DA00D443D1 /* AdminModel.swift in Sources */,
 				CEEEFE162BA0673500D443D1 /* SceneDelegate.swift in Sources */,

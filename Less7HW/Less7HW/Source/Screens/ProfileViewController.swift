@@ -1,7 +1,7 @@
 //
 //  ProfileViewController.swift
 //  Less7HW
-//
+//ProfileData
 
 //
 
@@ -18,26 +18,29 @@ class ProfileViewController: UIViewController {
     
     private let dataProvider = DataProviderService()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func loadUserDataButtonAction(_ sender: UIButton) {
         
-        dataProvider.loadUserData()
+        let user = dataProvider.loadUserData()
+        updateUI(with: user)
     }
     
     @IBAction func loadAdminDataButtonAction(_ sender: UIButton) {
         
-        dataProvider.loadAdminData()
+        let admin = dataProvider.loadAdminData()
+        updateUI(with: admin)
     }
     
-    func updateUI() {
+    func updateUI(with model: ProfileData) {
         
-//        avaImageView.image = UIImage(named: "")
-//        firstNameLabel.text =
-//        lastNameLabel.text =
-//        eMailLabel.text =
-//        addressLabel.text =
+        avaImageView.image = UIImage(named: model.avatarName)
+        firstNameLabel.text = model.firstName
+        lastNameLabel.text = model.lastName
+        eMailLabel.text = model.eMail
+        addressLabel.text = model.address
     }
 }
