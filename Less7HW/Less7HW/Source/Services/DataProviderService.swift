@@ -9,8 +9,8 @@ import Foundation
 
 class DataProviderService {
     
-    let loadUserData: () -> (ProfileData) = {
-
+    func loadUserData(completion: (ProfileData) -> ()) {
+        
         let user = UserModel(
             userAvatarName: "userAvatar",
             userFirstName: "John",
@@ -18,10 +18,10 @@ class DataProviderService {
             userEmail: "john.smith@gmail.com",
             userAdderss: "Green Bay, 1442 Sycamore Lake Road"
         )
-        return user
+        completion(user)
     }
     
-    let loadAdminData: () -> (ProfileData) = {
+    func loadAdminData(completion: (ProfileData) -> ()) {
         
         let admin = AdminModel(
             adminAvatarName: "adminAvatar",
@@ -30,6 +30,32 @@ class DataProviderService {
             adminEmail: "bob.lester@gmail.com",
             adminAdderss: "Russellville, 1171 Cambridge Court"
         )
-        return admin
+        completion(admin)
     }
+    
+//     ----- First decision -----    //
+    
+//    let loadUserData: () -> (ProfileData) = {
+//
+//        let user = UserModel(
+//            userAvatarName: "userAvatar",
+//            userFirstName: "John",
+//            userLastName: "Smith",
+//            userEmail: "john.smith@gmail.com",
+//            userAdderss: "Green Bay, 1442 Sycamore Lake Road"
+//        )
+//        return user
+//    }
+//
+//    let loadAdminData: () -> (ProfileData) = {
+//
+//        let admin = AdminModel(
+//            adminAvatarName: "adminAvatar",
+//            adminFirstName: "Bob",
+//            adminLastName: "Lester",
+//            adminEmail: "bob.lester@gmail.com",
+//            adminAdderss: "Russellville, 1171 Cambridge Court"
+//        )
+//        return admin
+//    }
 }

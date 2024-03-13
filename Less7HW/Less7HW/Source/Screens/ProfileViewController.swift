@@ -25,14 +25,26 @@ class ProfileViewController: UIViewController {
     
     @IBAction func loadUserDataButtonAction(_ sender: UIButton) {
         
-        let user = dataProvider.loadUserData()
-        updateUI(with: user)
+        dataProvider.loadUserData { data in
+            updateUI(with: data)
+        }
+        
+//     ----- First decision -----    //
+        
+//        let user = dataProvider.loadUserData()
+//        updateUI(with: user)
     }
     
     @IBAction func loadAdminDataButtonAction(_ sender: UIButton) {
         
-        let admin = dataProvider.loadAdminData()
-        updateUI(with: admin)
+        dataProvider.loadAdminData { data in
+            updateUI(with: data)
+        }
+        
+//     ----- First decision -----    //
+        
+//        let admin = dataProvider.loadAdminData()
+//        updateUI(with: admin)
     }
     
     func updateUI(with model: ProfileData) {
